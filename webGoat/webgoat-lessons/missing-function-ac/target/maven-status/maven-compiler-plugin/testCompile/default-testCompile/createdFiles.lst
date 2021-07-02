@@ -1,0 +1,4 @@
+org/owasp/webgoat/missing_ac/MissingFunctionACHiddenMenusTest.class
+org/owasp/webgoat/missing_ac/DisplayUserTest.class
+org/owasp/webgoat/missing_ac/MissingFunctionYourHashTest.class
+org/owasp/webgoat/missing_ac/MissingFunctionACUsersTest.class

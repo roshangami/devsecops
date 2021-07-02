@@ -1,0 +1,4 @@
+org/dummy/insecure/framework/VulnerableTaskHolder.class
+org/owasp/webgoat/deserialization/InsecureDeserialization.class
+org/owasp/webgoat/deserialization/SerializationHelper.class
+org/owasp/webgoat/deserialization/InsecureDeserializationTask.class

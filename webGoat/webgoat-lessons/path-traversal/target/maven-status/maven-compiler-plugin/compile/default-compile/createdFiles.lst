@@ -1,0 +1,6 @@
+org/owasp/webgoat/path_traversal/ProfileUploadFix.class
+org/owasp/webgoat/path_traversal/ProfileUpload.class
+org/owasp/webgoat/path_traversal/ProfileUploadRetrieval.class
+org/owasp/webgoat/path_traversal/ProfileUploadBase.class
+org/owasp/webgoat/path_traversal/PathTraversal.class
+org/owasp/webgoat/path_traversal/ProfileUploadRemoveUserInput.class

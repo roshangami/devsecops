@@ -1,0 +1,7 @@
+org/owasp/webgoat/client_side_filtering/Salaries.class
+org/owasp/webgoat/client_side_filtering/ShopEndpoint$CheckoutCodes.class
+org/owasp/webgoat/client_side_filtering/ShopEndpoint.class
+org/owasp/webgoat/client_side_filtering/ClientSideFilteringAssignment.class
+org/owasp/webgoat/client_side_filtering/ClientSideFilteringFreeAssignment.class
+org/owasp/webgoat/client_side_filtering/ClientSideFiltering.class
+org/owasp/webgoat/client_side_filtering/ShopEndpoint$CheckoutCode.class

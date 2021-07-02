@@ -1,0 +1,3 @@
+org/owasp/webgoat/xxe/BlindSendFileAssignmentTest.class
+org/owasp/webgoat/xxe/ContentTypeAssignmentTest.class
+org/owasp/webgoat/xxe/SimpleXXETest.class

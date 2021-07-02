@@ -1,0 +1,10 @@
+org/owasp/webgoat/password_reset/ResetLinkAssignment.class
+org/owasp/webgoat/password_reset/TriedQuestions.class
+org/owasp/webgoat/password_reset/QuestionsAssignment.class
+org/owasp/webgoat/password_reset/PasswordResetEmail.class
+org/owasp/webgoat/password_reset/SimpleMailAssignment.class
+org/owasp/webgoat/password_reset/PasswordResetEmail$PasswordResetEmailBuilder.class
+org/owasp/webgoat/password_reset/SecurityQuestionAssignment.class
+org/owasp/webgoat/password_reset/ResetLinkAssignmentForgotPassword.class
+org/owasp/webgoat/password_reset/PasswordReset.class
+org/owasp/webgoat/password_reset/resetlink/PasswordChangeForm.class

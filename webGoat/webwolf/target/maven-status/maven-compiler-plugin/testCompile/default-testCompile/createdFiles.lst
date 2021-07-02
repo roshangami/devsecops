@@ -1,0 +1,5 @@
+org/owasp/webwolf/user/UserServiceTest.class
+org/owasp/webwolf/mailbox/MailboxControllerTest.class
+org/owasp/webwolf/user/UserValidatorTest.class
+org/owasp/webwolf/mailbox/MailboxControllerTest$EmailMixIn.class
+org/owasp/webwolf/mailbox/MailboxRepositoryTest.class

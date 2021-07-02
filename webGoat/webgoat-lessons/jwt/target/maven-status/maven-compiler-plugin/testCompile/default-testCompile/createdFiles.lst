@@ -1,0 +1,6 @@
+org/owasp/webgoat/jwt/TokenTest$1.class
+org/owasp/webgoat/jwt/TokenTest.class
+org/owasp/webgoat/jwt/JWTRefreshEndpointTest.class
+org/owasp/webgoat/jwt/JWTSecretKeyEndpointTest.class
+org/owasp/webgoat/jwt/JWTVotesEndpointTest.class
+org/owasp/webgoat/jwt/JWTFinalEndpointTest.class

@@ -1,0 +1,4 @@
+org/owasp/webgoat/path_traversal/ProfileUploadRetrievalTest.class
+org/owasp/webgoat/path_traversal/ProfileUploadFixTest.class
+org/owasp/webgoat/path_traversal/ProfileUploadRemoveUserInputTest.class
+org/owasp/webgoat/path_traversal/ProfileUploadTest.class

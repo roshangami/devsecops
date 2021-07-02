@@ -1,0 +1,7 @@
+org/owasp/webgoat/crypto/EncodingAssignment.class
+org/owasp/webgoat/crypto/SigningAssignment.class
+org/owasp/webgoat/crypto/SecureDefaultsAssignment.class
+org/owasp/webgoat/crypto/HashingAssignment.class
+org/owasp/webgoat/crypto/Crypto.class
+org/owasp/webgoat/crypto/XOREncodingAssignment.class
+org/owasp/webgoat/crypto/CryptoUtil.class

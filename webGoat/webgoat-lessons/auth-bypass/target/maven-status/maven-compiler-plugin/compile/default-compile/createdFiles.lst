@@ -1,0 +1,3 @@
+org/owasp/webgoat/auth_bypass/AuthBypass.class
+org/owasp/webgoat/auth_bypass/AccountVerificationHelper.class
+org/owasp/webgoat/auth_bypass/VerifyAccount.class

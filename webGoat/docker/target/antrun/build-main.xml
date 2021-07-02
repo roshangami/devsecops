@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="../webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar" tofile="webgoat-server-v8.2.0-SNAPSHOT.jar"/>
+  <copy file="../webwolf/target/webwolf-v8.2.0-SNAPSHOT.jar" tofile="webwolf-v8.2.0-SNAPSHOT.jar"/>
+</target>
+</project>
