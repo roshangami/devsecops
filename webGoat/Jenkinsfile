@@ -12,9 +12,11 @@ pipeline {
     		}
 		
 		stage('Compile Stage'){
-			withMaven(maven: 'maven_3_6_3'){
-					sh 'mvn clean install -DskipTests'
+			steps{
+				withMaven(maven: 'maven_3_6_3'){
+						sh 'mvn clean install -DskipTests'
+					}
 				}
 			}
-	}
+		}
 }
