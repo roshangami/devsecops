@@ -13,10 +13,7 @@ pipeline {
 		
 		stage('Compile Stage'){
 			steps{
-				withMaven(maven: 'maven_3_6_3'){
-						sh 'cd webGoat'
 						sh 'mvn clean install -DskipTests'
-					}
 				}
 			}
 		}
