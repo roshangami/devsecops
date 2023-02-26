@@ -10,13 +10,13 @@ pipeline {
 		            ''' 
       			}
     		}
-		stage ('Check secrets') {
+		stage ('Check Secrets') {
      			steps {
 			      sh 'trufflehog3 https://github.com/roshangami/devsecops.git -f json -o truffelhog_output.json || true'
 				      }
     			}
 		
-	stage ('Software composition analysis') {
+	stage ('Software Composition Analysis') {
             steps {
                 dependencyCheck additionalArguments: ''' 
                     -o "./" 
@@ -28,13 +28,13 @@ pipeline {
             }
         }
 		
-	stage('Compile Stage'){
+	stage('Compile and Build'){
 		steps{
 			sh 'mvn clean install -DskipTests'
 			}
 		}
 		
-	stage ('Static analysis') {
+	stage ('Static Application Security Testing') {
 	      steps {
         	withSonarQubeEnv('sonarqube') {
 	          sh 'mvn sonar:sonar'
