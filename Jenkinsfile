@@ -28,5 +28,13 @@ pipeline {
 			sh 'mvn clean install -DskipTests'
 			}
 		}
+		
+	stage ('Static analysis') {
+	      steps {
+        	withSonarQubeEnv('sonarqube') {
+	          sh 'mvn sonar:sonar'
+			}
+	      	}
+    		}
 	}
 }
