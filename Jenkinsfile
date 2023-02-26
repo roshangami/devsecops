@@ -10,10 +10,23 @@ pipeline {
 		            ''' 
       			}
     		}
-		stage('Compile Stage'){
-			steps{
-						sh 'mvn clean install -DskipTests'
-				}
+		
+	stage ('Software composition analysis') {
+            steps {
+                dependencyCheck additionalArguments: ''' 
+                    -o "./" 
+                    -s "./"
+                    -f "ALL" 
+                    --prettyPrint''', odcInstallation: 'owasp-dc'
+
+                dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+            }
+        }
+		
+	stage('Compile Stage'){
+		steps{
+			sh 'mvn clean install -DskipTests'
 			}
 		}
+	}
 }
