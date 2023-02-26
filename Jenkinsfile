@@ -10,6 +10,11 @@ pipeline {
 		            ''' 
       			}
     		}
+		stage ('Check secrets') {
+     			steps {
+			      sh 'trufflehog3 https://github.com/roshangami/devsecops.git -f json -o truffelhog_output.json || true'
+				      }
+    			}
 		
 	stage ('Software composition analysis') {
             steps {
@@ -33,8 +38,8 @@ pipeline {
 	      steps {
         	withSonarQubeEnv('sonarqube') {
 	          sh 'mvn sonar:sonar'
-			}
+				}
 	      	}
-    		}
+    	}
 	}
 }
