@@ -41,7 +41,7 @@ pipeline {
 	stage ('SAST - SemGrep') {
 	      steps {
         	sh 'sudo docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep --config=auto --output semgrep_output.json --json'
-		sh './semgrep_report.sh'
+		//sh './semgrep_report.sh'
 	      	}
     	}
 		
@@ -54,7 +54,7 @@ pipeline {
             steps {
         	   sshagent(['application-server']) {
                 	sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/webgoat-devsecops/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar ubuntu@172.31.27.167:/WebGoat'
-			sh 'ssh -o  StrictHostKeyChecking=no ubuntu@172.31.27.167 "nohup java -jar /WebGoat/webgoat-server-v8.2.0-SNAPSHOT.jar &"'
+			sh 'ssh -o  StrictHostKeyChecking=no ubuntu@172.31.27.167 "nohup java -jar /WebGoat/webgoat-server-v8.2.0-SNAPSHOT.jar --server.address=0.0.0.0 --server.port=8080 &"'
            		}      
            	}     
     	}
