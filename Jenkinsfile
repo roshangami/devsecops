@@ -60,6 +60,14 @@ pipeline {
 		    }
            	}     
     	}
-		
+	
+	 stage ('Dynamic analysis') {
+            steps {
+         	  sshagent(['application_server']) {
+                	sh 'ssh -o  StrictHostKeyChecking=no ubuntu@172.31.28.107 "sudo docker run --rm -v /home/ubuntu:/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -t http://172.31.27.167:8080/WebGoat -x zap_report || true" '
+			//sh 'ssh -o  StrictHostKeyChecking=no ubuntu@172.31.28.107 "sudo ./zap_report.sh"'
+                 }      
+           }       
+    }
     }
 }
